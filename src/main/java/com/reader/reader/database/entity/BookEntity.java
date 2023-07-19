@@ -3,6 +3,7 @@ package com.reader.reader.database.entity;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.springframework.context.annotation.Bean;
 
 import javax.persistence.*;
 
