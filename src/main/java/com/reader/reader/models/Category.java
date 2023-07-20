@@ -9,7 +9,6 @@ import lombok.Setter;
 @Setter
 public class Category {
     private final Integer id;
-    private final Integer code;
     private final String name;
 
 }

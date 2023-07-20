@@ -5,18 +5,21 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+
 @Entity
 @Getter
 @Setter
-@Table(name = "Category")
+@Table(name = "Collection")
 @RequiredArgsConstructor
-public class CategoryEntity {
+public class CollectionEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "name")
-    private String name;
-}
+    @OneToOne
+    private  CategoryEntity categoryEntity;
 
+    @OneToOne
+    private  BookEntity bookEntity;
+}

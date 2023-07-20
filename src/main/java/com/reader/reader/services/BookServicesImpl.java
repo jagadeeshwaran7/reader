@@ -4,9 +4,7 @@ import com.reader.reader.database.entity.BookEntity;
 import com.reader.reader.database.repo.BookRepo;
 import com.reader.reader.models.Book;
 import com.reader.reader.transformer.BookTransformer;
-import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class BookServicesImpl implements BookServices {
 
-    private final BookRepo bookRepo;
+    private  BookRepo bookRepo;
     private final BookTransformer bookTransformer;
 
     @Override

@@ -27,7 +27,7 @@ public class BookController {
         }
     }
     @PutMapping("/publishbook")
-    public void createAbook(@RequestParam Book book) {
+    public void createAbook(@RequestBody Book book) {
         bookServices.createBook(book);
     }
 }
