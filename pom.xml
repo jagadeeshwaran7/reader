@@ -18,6 +18,14 @@
 		<org.mapstruct.version>1.5.5.Final</org.mapstruct.version>
 
 	</properties>
+	
+  <repositories>
+        <repository>
+            <id>java-net-repo</id>
+            <url>https://maven.java.net/content/repositories/public/</url>
+        </repository>     
+  </repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
